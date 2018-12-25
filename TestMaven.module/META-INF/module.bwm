@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_YYOTIAeiEemL-NCdGU5KOA" targetNamespace="http://tns.tibco.com/bw/composite/TestMaven.module" name="TestMaven.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_gJGOcAeiEemL-NCdGU5KOA" name="testmaven" promote="ComponentProcess/testmaven">
+    <sca:interface.wsdl xmi:id="_gJYiUAeiEemL-NCdGU5KOA" interface="http://xmlns.example.com/20181224113605PLT#wsdl.interface(testmaven)" scaext:wsdlLocation="../Processes/testmaven/module/Process.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_gJoZ8AeiEemL-NCdGU5KOA" name="RestService" path="/testmaven" docBasePath="http://localhost:7777/TestMaven.module" docResourcePath="Resource" basePath="/" connector="testmaven.module.Resource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/testmaven.module.Process-Resource.json">
+      <operation xmi:id="_gJwVwAeiEemL-NCdGU5KOA" operationName="get" nickname="get-testmaven" httpMethod="GET" responseStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_gNBFIAeiEemL-NCdGU5KOA"/>
+      <advancedConfig xmi:id="_gJtScAeiEemL-NCdGU5KOA" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_gJw80AeiEemL-NCdGU5KOA" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_ZyU5oAeiEemL-NCdGU5KOA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Zyt7MAeiEemL-NCdGU5KOA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ZyyzsAeiEemL-NCdGU5KOA" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Zy5hYAeiEemL-NCdGU5KOA" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ZzDSYAeiEemL-NCdGU5KOA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ZzKAEAeiEemL-NCdGU5KOA" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_ZzRU0AeiEemL-NCdGU5KOA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_ZRL7cAeiEemL-NCdGU5KOA" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ZRNJkAeiEemL-NCdGU5KOA" processName="testmaven.module.Process"/>
+    <sca:service xmi:id="_gI6BMAeiEemL-NCdGU5KOA" name="testmaven">
+      <sca:interface.wsdl xmi:id="_gI-SoAeiEemL-NCdGU5KOA" interface="http://xmlns.example.com/20181224113605PLT#wsdl.interface(testmaven)" scaext:wsdlLocation="../Processes/testmaven/module/Process.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>
