@@ -1,0 +1,9 @@
+#Docker host properties
+#Mon Dec 24 13:12:40 CST 2018
+bwdocker.certPath=</home/user/machine/>
+docker.image=gcr.io/<project_id>/<image-name>
+bwdocker.autoPullImage=Always
+bwdocker.host=tcp\://0.0.0.0\:2376
+bwdocker.maintainer=abc@tibco.com
+bwdocker.containername=
+bwdocker.from=tibco/bwce

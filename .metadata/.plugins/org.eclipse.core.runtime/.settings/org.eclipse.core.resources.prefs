@@ -1,4 +1,4 @@
-description.buildorder=TestMaven.module/TestMaven/TestMaven.parent
+description.buildorder=TestMaven.module/TestMaven/TestMaven2.module/TestMaven2/TestMaven.parent
 description.defaultbuildorder=false
 eclipse.preferences.version=1
 version=1
